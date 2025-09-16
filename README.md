@@ -8,5 +8,8 @@ This also has a pytorch like API and can be used for simple tasks like binary cl
 shown is a simple example as to how the forward pass and backward pass work:
 
 
-<img src="assets/forpass.png" alt="forward pass" width="300"/>
-<img src="assets/backpass.png" alt="backward pass" width="300"/>
+<div align="center">
+  <img src="assets/forpass.png" alt="forward pass" width="300"/>
+  <img src="assets/backpass.png" alt="backward pass" width="300"/>
+</div>
+
