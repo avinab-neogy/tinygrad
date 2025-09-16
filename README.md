@@ -9,7 +9,8 @@ shown is a simple example as to how the forward pass and backward pass work:
 
 
 <div align="center">
-  <img src="assets/forpass.png" alt="forward pass" width="300"/>
+  <img src="assets/forpass.png" alt="forward pass" width="300"/><br>
   <img src="assets/backpass.png" alt="backward pass" width="300"/>
 </div>
+
 
