@@ -93,6 +93,26 @@ class Value:
 
         return out
     
+    @staticmethod
+    def softmax(values):
+        """
+        Applies softmax to a list of Value objects.
+        Returns a list of Value objects representing the softmax probabilities.
+        """
+        # Compute exponentials
+        exps = [v.exp() for v in values]
+        
+        # Compute sum of exponentials
+        exp_sum = sum(exps, Value(0.0))
+        
+        # Normalize each exponential by the sum
+        softmax_outputs = []
+        for exp_val in exps:
+            prob = exp_val / exp_sum
+            softmax_outputs.append(prob)
+        
+        return softmax_outputs
+
     def backward(self):
         
         # topological order all of the children in the graph
