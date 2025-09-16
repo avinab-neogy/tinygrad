@@ -99,13 +99,13 @@ class Value:
         Applies softmax to a list of Value objects.
         Returns a list of Value objects representing the softmax probabilities.
         """
-        # Compute exponentials
+        # compute exponentials
         exps = [v.exp() for v in values]
         
-        # Compute sum of exponentials
+        # compute sum of exponentials
         exp_sum = sum(exps, Value(0.0))
         
-        # Normalize each exponential by the sum
+        # normalize each exponential by the sum
         softmax_outputs = []
         for exp_val in exps:
             prob = exp_val / exp_sum
